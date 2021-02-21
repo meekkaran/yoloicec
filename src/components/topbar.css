@@ -1,0 +1,36 @@
+.top{
+    border-bottom: 1px solid black;
+}
+.top1 ul{
+   margin-left: 30%;
+}
+.top1 ul li{
+    display:inline-block;  
+}
+.top1 ul li img{
+    width:50px;
+}
+.yolo{
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    color:pink;
+}
+
+.top2 {
+    float:right;
+    margin-top:10px;
+    margin-right: 25px;
+ }
+ .top2 li{
+     display:inline-block;  
+ }
+ .top2 li img{
+     width:50px;
+ }
+
+ /* navbar */
+ .navbar{
+     padding: 30px;
+     font-size: 25px;
+ }
