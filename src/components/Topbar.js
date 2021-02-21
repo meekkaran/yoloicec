@@ -5,10 +5,13 @@ function Topbar() {
     return (
         <div>
             <Link to="/" className="logo">
-                YOLO-ICEC <i className="fab fa-typo3" />
+                <ul >
+                    <li> YOLO-ICEC</li>
+                    <li> <img src="./iceimage/icecream.png" /></li>
+                    <li> <img src="./iceimage/milkshake.png" /></li>
+                    <li> <img src="./iceimage/cocktail.png" /></li>
+                </ul>
             </Link>
-            <p>yvnuvnujninijmfoke,kxskgbjmyh</p>
-            <i className="fab fa-mountain" />
         </div>
     )
 }
