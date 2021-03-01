@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import {Carousel} from 'react-bootstrap';
 import {Animated} from "react-animated-css";
 import {Link} from 'react-router-dom';
+import {Nav} from 'react-bootstrap';
 import './topbar.css'
 import {
 MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
@@ -31,7 +32,7 @@ render() {
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav left>
             <MDBNavItem active >
-              <MDBNavLink to="#!">Home</MDBNavLink>
+              <MDBNavLink to="/">Home</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBNavLink to="#!">About Us</MDBNavLink>
@@ -55,7 +56,7 @@ render() {
               <MDBNavLink to="#!">Order</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="#!">Location</MDBNavLink>
+              <Nav.Link href="/Location">Location</Nav.Link>
             </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
@@ -73,6 +74,7 @@ render() {
 
     <div className="top">
         <div className="top1">
+          <img src="./iceimage/firstimage.png" className="firstimage" />
         <ul>
             <li className="yolo"> YOLO-ICEC</li>
             <li> <img src="./iceimage/icecream.png" /></li>
@@ -126,6 +128,68 @@ render() {
         </div>
     </main>
 
+
+{/* featured categories */}
+    <featured>
+        <div className="mainintro" style={{paddingBottom:'1em'}}>
+            <h1 style={{textAlign:'center'}}>THIS WEEKS SPECIAL</h1>
+        </div>
+
+        <div className="row">
+         <div className="col-lg-4 col-md-6">
+         <div className="featured">
+                <Carousel>
+                <Carousel.Item interval={2000}>
+                <img src="../iceimage/14.png" />
+                </Carousel.Item>
+                <Carousel.Item interval={2000}>
+                <img src="../iceimage/3.png" />
+                </Carousel.Item>
+                <Carousel.Item interval={2000}>
+                <img src="../iceimage/4.png" />
+                </Carousel.Item>
+                </Carousel> 
+         </div>
+         </div>
+
+         <div className="col-lg-4 col-md-6 ">
+         <div className="featured"> 
+                      <Carousel>
+                      <Carousel.Item interval={2000}>
+                      <img src="../iceimage/5.png" />
+                      </Carousel.Item>
+                      <Carousel.Item interval={2000}>
+                      <img src="../iceimage/6.png" />
+                      </Carousel.Item>
+                      <Carousel.Item interval={2000}>
+                      <img src="../iceimage/7.png" />
+                      </Carousel.Item>
+                      </Carousel>
+         </div>
+         </div>
+
+         <div className="col-lg-4 col-md-6">
+         <div className="featured"> 
+                  <Carousel>
+                  <Carousel.Item interval={2000}>
+                  <img src="../iceimage/8.png" />
+                  </Carousel.Item>
+                  <Carousel.Item interval={2000}>
+                  <img src="../iceimage/9.png" />
+                  </Carousel.Item>
+                  <Carousel.Item interval={2000}>
+                  <img src="../iceimage/10.png" />
+                  </Carousel.Item>
+                  </Carousel>
+         </div>
+         </div>
+        </div>
+    </featured>
+
+
+
+
+    
     {/* videos */}
     <div className="videos" style={{paddingBottom:'1em'}}>
          <h2 style={{textAlign:'center'}}>YOLO MIKLSHAKES AND ICECREAMS</h2>
@@ -197,8 +261,7 @@ render() {
 
          <div className="col-lg-6 col-md-6">
          <div className="videoimage"> 
-         <button className="btn">MilkShakes</button>
-         <img src="../iceimage/milkshake.png"/>
+         <img src="../video/yolo1.mp4"/>
          <p> We offer healthiest milkshakes well prepared for you.
            they come in various flavours from  milk flavoured to fruit flavoured.
            Our Killer Milkshakes That Will Rock Your World
@@ -222,17 +285,16 @@ render() {
          <p>you can order online from our shop and it will delivered to you immediately.
            Delivery around cbd is free and within minutes.
          </p>
-         <img src="../iceimage/milkshake.png"/>
+         <img src="../iceimage/order.png"/>
          </div>
          </div>
 
          <div className="col-lg-4 col-md-6">
          <div className="secondlast"> 
          <button className="btn1">INSTORE MENU</button>
-         <p> our menu has various options that you can select from you wont get bored
-           welcome to yolo ice cream.
+         <p> our menu has various options that you can select from.
          </p>
-         <img src="../iceimage/milkshake.png"/>
+         <img src="../iceimage/menu.png"/>
          </div>
          </div>
         </div>
@@ -273,76 +335,73 @@ render() {
       </div>
       <MDBContainer className="mt-5 mb-4 text-center text-md-left">
         <MDBRow className="mt-3">
-          <MDBCol md="3" lg="4" xl="3" className="mb-4">
+          <MDBCol style={{margin: "20px"}}  md="3" lg="4" xl="3" className="mb-4">
             <h6 className="text-uppercase font-weight-bold">
-              <strong>Company name</strong>
+              <strong className="footerheading">Company name</strong>
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
-            <p>
+            <p style={{fontSize: "22px"}}>
               Here you can use rows and columns here to organize your footer
               content. Lorem ipsum dolor sit amet, consectetur adipisicing
               elit.
             </p>
           </MDBCol>
-          <MDBCol md="2" lg="2" xl="2" className="mb-4">
+          <MDBCol style={{margin: "20px"}}  md="2" lg="2" xl="2" className="mb-4">
             <h6 className="text-uppercase font-weight-bold">
-              <strong>Products</strong>
+              <strong className="footerheading">Products</strong>
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
             <p>
-              <a href="#!">MDBootstrap</a>
+              <a style={{fontSize: "22px"}} href="#!">MDBootstrap</a>
             </p>
             <p>
-              <a href="#!">MDWordPress</a>
+              <a  style={{fontSize: "22px"}}href="#!">MDWordPress</a>
             </p>
             <p>
-              <a href="#!">BrandFlow</a>
+              <a style={{fontSize: "22px"}} href="#!">BrandFlow</a>
             </p>
             <p>
-              <a href="#!">Bootstrap Angular</a>
+              <a  style={{fontSize: "22px"}}href="#!">Bootstrap Angular</a>
             </p>
           </MDBCol>
-          <MDBCol md="3" lg="2" xl="2" className="mb-4">
+          <MDBCol style={{margin: "20px"}}  md="3" lg="2" xl="2" className="mb-4">
             <h6 className="text-uppercase font-weight-bold">
-              <strong>Useful links</strong>
+              <strong className="footerheading">How to Order</strong>
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
             <p>
-              <a href="#!">Your Account</a>
+              <a style={{fontSize: "22px"}} href="#!">Order Online</a>
             </p>
             <p>
-              <a href="#!">Become an Affiliate</a>
+              <a style={{fontSize: "22px"}} href="#!">Find Our Store</a>
             </p>
             <p>
-              <a href="#!">Shipping Rates</a>
-            </p>
-            <p>
-              <a href="#!">Help</a>
+              <a style={{fontSize: "22px"}} href="#!">Call 0713201600</a>
             </p>
           </MDBCol>
-          <MDBCol md="4" lg="3" xl="3" className="mb-4">
+          <MDBCol style={{margin: "20px"}}  md="4" lg="3" xl="3" className="mb-4">
             <h6 className="text-uppercase font-weight-bold">
-              <strong>Contact</strong>
+              <strong className="footerheading">Contact Us</strong>
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
             <p>
-              <i className="fa fa-home mr-3" /> New York, NY 10012, US
+              <i style={{fontSize: "22px"}} className="fa fa-home mr-3" /> Moi Avenue, NAIROBI 10012, KENYA
             </p>
             <p>
-              <i className="fa fa-envelope mr-3" /> info@example.com
+              <i style={{fontSize: "22px"}} className="fa fa-envelope mr-3" /> customercare@yolo_icec.com
             </p>
             <p>
-              <i className="fa fa-phone mr-3" /> + 01 234 567 88
+              <i style={{fontSize: "22px"}} className="fa fa-phone mr-3" /> + 254 713 201 600
             </p>
             <p>
-              <i className="fa fa-print mr-3" /> + 01 234 567 89
+              <i style={{fontSize: "22px"}} className="fa fa-print mr-3" /> + 01 234 567 89
             </p>
           </MDBCol>
         </MDBRow>
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.YOLOIcec.com"> YOLOIcec.com </a>
         </MDBContainer>
       </div>
     </MDBFooter>

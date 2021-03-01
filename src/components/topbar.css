@@ -1,6 +1,11 @@
 .top{
     border-bottom: 1px solid black;
 }
+.top1 .firstimage{
+    width: 100%;
+    height:500px;
+
+}
 .top1 ul{
    margin-left: 30%;
 }
@@ -69,9 +74,30 @@
     margin-bottom: 30px;
     height: 70px;
 }
+  
 
+/* featured */
+.featured{
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 300ms linear 0s;
+}
+.featured img{
+    width:100%;
+    border-radius: 5px;
+}
 
 /* videos */
+.videoimage{
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    background: pink;
+    transition: all 300ms linear 0s;
+}
 .videoimage h5{
     color:skyblue;
 }
@@ -104,5 +130,11 @@
 }
 .secondlast img{
     margin-bottom: 30px;
-    height: 70px;
+    height: 100px;
+}
+
+/* footer */
+.footerheading{
+    font-size: 23px;
+    padding: 20px;
 }
