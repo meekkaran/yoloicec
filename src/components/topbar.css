@@ -1,11 +1,6 @@
 .top{
     border-bottom: 1px solid black;
 }
-.top1 .firstimage{
-    width: 100%;
-    height:500px;
-
-}
 .top1 ul{
    margin-left: 30%;
 }
@@ -87,6 +82,12 @@
 .featured img{
     width:100%;
     border-radius: 5px;
+    margin-bottom:10px;
+    cursor:pointer;
+    transition: 1s;
+}
+.featured img:hover{
+    transform: scale(1.1);
 }
 
 /* videos */
